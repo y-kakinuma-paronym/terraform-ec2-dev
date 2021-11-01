@@ -66,7 +66,7 @@ module "ec2" {
 # Elastic IP
 module "eip" {
   source   = "./modules/elastic_ip"
-  ec2_id   = module.ec2.id[0]
+  ec2_id   = module.ec2.id
   app_name = var.app_name
 }
 
